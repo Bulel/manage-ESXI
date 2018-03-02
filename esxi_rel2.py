@@ -10,8 +10,6 @@ import sys
 
 def mlog(log):       
         m=open('esxilog.txt','a')
-        #print("-"*64)
-        #print("Writing log in monitorlog.txt")
         date=time.strftime('%Y/%m/%d %H:%M:%S',time.localtime(time.time()))
         date=str(date)
         msg=date+" - "+log
