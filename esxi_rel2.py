@@ -1,6 +1,6 @@
 #-*- encoding: utf-8 -*-
 # @function: shutdown esxi after one host is down
-# @author:   jimx
+# @author:   bulel
 
 import paramiko
 import time
