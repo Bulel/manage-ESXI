@@ -88,7 +88,7 @@ while True:
         time.sleep(3)
 
         msg = 'Will shutdown the PC after 10 seconds'       
-        win32api.InitiateSystemShutdown(None,msg,10,1,1) 
+        win32api.InitiateSystemShutdown(None,msg,10,1,0) 
         #InitiateSystemShutdown(computerName, message, timeOut, bForceClose, bRebootAfterShutdown)
         mlog(msg)
         
