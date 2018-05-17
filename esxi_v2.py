@@ -77,7 +77,7 @@ def detect_status():
             for ss in stdout:
                 s_0 = s_0 + ss
 
-            #get all the up host
+            #get all the up hosts
             if re.search(r'(Powered on)',s_0):
 
                 print("-"*60)
@@ -169,7 +169,7 @@ while True:
         time.sleep(3)
 
         msg = 'Will shutdown the PC after 10 seconds'       
-        #win32api.InitiateSystemShutdown(None,msg,10,1,0) #InitiateSystemShutdown(computerName, message, timeOut, bForceClose, bRebootAfterShutdown)
+        win32api.InitiateSystemShutdown(None,msg,10,1,0) #InitiateSystemShutdown(computerName, message, timeOut, bForceClose, bRebootAfterShutdown)
         mlog(msg)
         
         break
